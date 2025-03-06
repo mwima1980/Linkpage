@@ -8,11 +8,11 @@
 /* Variablen / Color */
 :root {
   --Color1: #0D1F2D;
-  --Color1: #546A7B;
-  --Color1: #9EA3B0;
-  --Color1: #FAE1DF;
-  --Color1: #E4C3AD;
-  --Color1: #040c13;
+  --Color2: #546A7B;
+  --Color3: #9EA3B0;
+  --Color4: #FAE1DF;
+  --Color5: #E4C3AD;
+  --black: #040c13;
 }
 
 
@@ -30,10 +30,6 @@
   src: url("./Source/Fonts/HindMadurai-Regular.ttf") format("truetype");
 }
 
-/* Body */
-body {
-  font-family: Mallana;
-}
 /* Typescaling */
 h1 {
   font-size: 2.027rem;
@@ -63,7 +59,44 @@ small {
   font-size: 0.889rem;
 }
 
-/* Fluid - Sizing */
+/* Body */
+body {
+  background-color: var(--Color1);
+  font-family: Mallana;
+}
+
+/* Header - Bereich */
+.hero-section {
+  border: 3px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+  gap: 2rem;
+  .profile-img-container {
+    border: 3px solid --Color2;
+  }
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.125;
+    h1 {
+      color: var(--Color4);
+      margin-bottom: 1rem;
+    }
+    p {
+      text-align: left;
+      color: var(--Color3);
+    }
+  }
+  .icon-container {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+/* Madia Queries */
 .container {
   width: 95%;
   padding-left: 0.938rem;
@@ -72,7 +105,6 @@ small {
   margin-right: auto;
   border: 3px solid red;
 }
-
 @media (min-width: 576px) {
   .container {
     width: 90%;
@@ -92,7 +124,7 @@ small {
   }
 }
 @media (min-width: 1200px) {
-  container {
+  .container {
     width: 80%;
   }
   html {
@@ -100,7 +132,7 @@ small {
   }
 }
 @media (min-width: 1400px) {
-  container {
+  .container {
     width: 70%;
   }
   html {
@@ -108,7 +140,7 @@ small {
   }
 }
 @media (min-width: 1920px) {
-  container {
+  .container {
     width: 60%;
   }
   html {
