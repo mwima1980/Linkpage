@@ -5,13 +5,24 @@
   box-sizing: border-box;
 }
 
+/* Variablen / Color */
+:root {
+  --Color1: #0D1F2D;
+  --Color1: #546A7B;
+  --Color1: #9EA3B0;
+  --Color1: #FAE1DF;
+  --Color1: #E4C3AD;
+  --Color1: #040c13;
+}
+
+
 /* Fonts */
 @font-face {
   font-family: Mallana;
   src: url("./Source/Fonts/Mallanna-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: PermanetMarker;
+  font-family: Marker;
   src: url("./Source/Fonts/PermanentMarker-Regular.ttf") format("truetype");
 }
 @font-face {
@@ -19,12 +30,18 @@
   src: url("./Source/Fonts/HindMadurai-Regular.ttf") format("truetype");
 }
 
+/* Body */
+body {
+  font-family: Mallana;
+}
 /* Typescaling */
 h1 {
-  font-size: 1.802rem;
+  font-size: 2.027rem;
+  font-family: Marker;
 }
 h2 {
   font-size: 1.802rem;
+  font-family: Marker;
 }
 h3 {
   font-size: 1.602rem;
@@ -46,10 +63,11 @@ small {
   font-size: 0.889rem;
 }
 
+/* Fluid - Sizing */
 .container {
   width: 95%;
-  padding-left: 1rem;
-  padding-right: 1;
+  padding-left: 0.938rem;
+  padding-right: 0.938rem;
   margin-left: auto;
   margin-right: auto;
   border: 3px solid red;
@@ -62,7 +80,7 @@ small {
 }
 @media (min-width: 768px) {
   .container {
-    width: 85px;
+    width: 85%;
   }
   html {
     font-size: 1.1rem;
