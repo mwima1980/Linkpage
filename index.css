@@ -97,7 +97,6 @@ body {
 
 /* Main - Bereich */
 .video-section {
-  border: 3px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -111,16 +110,54 @@ body {
       font-size: 1.802rem;
       color: var(--Color4);
       font-family: Marker;
-      margin-left: .2rem;
-      margin-right: .2rem;
+      margin-left: 0.2rem;
+      margin-right: 0.2rem;
     }
   }
   .video-container {
     width: 100%;
     video {
       width: 100%;
-  
     }
+  }
+}
+
+/* Link - Section */
+.link-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 4rem 8rem 4rem;
+  gap: 2rem;
+  .link1 {
+    background-color: var(--Color3);
+    color: var(--Color1);
+    padding: 2rem;
+    width: 100%;
+    border-radius: 1.25rem;
+  }
+  .link2 {
+    background-color: var(--Color3);
+    color: var(--Color1);
+    padding: 2rem;
+    width: 100%;
+    border-radius: 1.25rem;
+  }
+  .link3 {
+    background-color: var(--Color3);
+    color: var(--Color1);
+    padding: 2rem;
+    width: 100%;
+    border-radius: 1.25rem;
+  }
+  .link4 {
+    background-color: var(--Color3);
+    color: var(--Color1);
+    padding: 2rem;
+    width: 100%;
+    border-radius: 1.25rem;
   }
 }
 
