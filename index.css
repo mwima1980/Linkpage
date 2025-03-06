@@ -161,6 +161,31 @@ body {
   }
 }
 
+/* Footer - Section */
+.footer-section {
+  border: 3px solid red;
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem 2rem 2rem;
+  gap: .5rem;
+  .link-container {
+    display: flex;
+    justify-content: space-between;
+    .links {
+      display: flex;
+      gap: 1rem;
+      a {
+        color: var(--Color2);
+        text-decoration: none;
+      }
+    }
+  }
+  .text-container {
+    color: var(--Color2);
+  }
+}
+
 /* Madia Queries */
 .container {
   width: 95%;
