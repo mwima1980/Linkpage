@@ -7,14 +7,13 @@
 
 /* Variablen / Color */
 :root {
-  --Color1: #0D1F2D;
-  --Color2: #546A7B;
-  --Color3: #9EA3B0;
-  --Color4: #FAE1DF;
-  --Color5: #E4C3AD;
+  --Color1: #0d1f2d;
+  --Color2: #546a7b;
+  --Color3: #9ea3b0;
+  --Color4: #fae1df;
+  --Color5: #e4c3ad;
   --black: #040c13;
 }
-
 
 /* Fonts */
 @font-face {
@@ -47,9 +46,9 @@ h4 {
 }
 h5 {
   font-size: 1.266rem;
+  font-weight: 400;
 }
 h6 {
-
   font-size: 1.125rem;
 }
 p {
@@ -93,6 +92,35 @@ body {
   .icon-container {
     display: flex;
     gap: 2rem;
+  }
+}
+
+/* Main - Bereich */
+.video-section {
+  border: 3px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 3rem;
+  color: var(--Color3);
+  .text-container {
+    .h2 {
+      font-size: 1.802rem;
+      color: var(--Color4);
+      font-family: Marker;
+      margin-left: .2rem;
+      margin-right: .2rem;
+    }
+  }
+  .video-container {
+    width: 100%;
+    video {
+      width: 100%;
+  
+    }
   }
 }
 
