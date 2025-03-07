@@ -66,7 +66,6 @@ body {
 
 /* Header - Bereich */
 .hero-section {
-  border: 3px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,6 +91,12 @@ body {
   .icon-container {
     display: flex;
     gap: 2rem;
+  }
+  a {
+    &:hover {
+      transform: scale(1.1);
+      border-bottom: 3px solid var(--Color2);
+    }
   }
 }
 
@@ -127,23 +132,40 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   text-align: center;
   padding: 4rem 4rem 8rem 4rem;
   gap: 2rem;
+  .link-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    a {
+      text-decoration: none;
+    }
+   
+  }
   .link1 {
     background-color: var(--Color3);
     color: var(--Color1);
     padding: 2rem;
     width: 100%;
     border-radius: 1.25rem;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
   .link2 {
     background-color: var(--Color3);
     color: var(--Color1);
     padding: 2rem;
-    width: 100%;
+    width: 90%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 1.25rem;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
   .link3 {
     background-color: var(--Color3);
@@ -151,6 +173,9 @@ body {
     padding: 2rem;
     width: 100%;
     border-radius: 1.25rem;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
   .link4 {
     background-color: var(--Color3);
@@ -158,12 +183,14 @@ body {
     padding: 2rem;
     width: 100%;
     border-radius: 1.25rem;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 
 /* Footer - Section */
 .footer-section {
-  border: 3px solid red;
   background-color: var(--black);
   display: flex;
   flex-direction: column;
@@ -188,13 +215,26 @@ body {
 
 /* Madia Queries */
 .container {
-  width: 95%;
+  /* width: 95%; */
   padding-left: 0.938rem;
   padding-right: 0.938rem;
   margin-left: auto;
   margin-right: auto;
-  border: 3px solid red;
 }
+
+@media (min-width: 360px) {
+  .hero-section {
+    width: 100%;
+    padding: 2rem 0rem 2rem 0rem;
+  }
+  .video-section {
+    padding: 3rem 0rem 3rem 0rem;
+  }
+  .link-section {
+    padding: 4rem 2rem 8rem 2rem;
+  }
+}
+
 @media (min-width: 576px) {
   .container {
     width: 90%;
@@ -202,7 +242,7 @@ body {
 }
 @media (min-width: 768px) {
   .container {
-    width: 85%;
+    width: 75%;
   }
   html {
     font-size: 1.1rem;
@@ -212,10 +252,13 @@ body {
   html {
     font-size: 1.125rem;
   }
+  .container {
+    width: 60%;
+  }
 }
 @media (min-width: 1200px) {
   .container {
-    width: 80%;
+    width: 50%;
   }
   html {
     font-size: 1.15rem;
@@ -223,7 +266,7 @@ body {
 }
 @media (min-width: 1400px) {
   .container {
-    width: 70%;
+    width: 45%;
   }
   html {
     font-size: 1.2rem;
